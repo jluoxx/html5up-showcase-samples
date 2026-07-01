@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+	<head>
+		<title>HTML5 UP 个人主页样板合集</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			:root { color-scheme: light; --ink: #172026; --muted: #65727f; --line: #d8dee4; --paper: #f7f4ee; --accent: #0f766e; --accent2: #b45309; }
+			* { box-sizing: border-box; }
+			body { margin: 0; font-family: Arial, "Microsoft YaHei", sans-serif; color: var(--ink); background: var(--paper); }
+			header { padding: 56px 6vw 28px; max-width: 1180px; margin: 0 auto; }
+			h1 { margin: 0 0 14px; font-size: clamp(32px, 6vw, 64px); line-height: 1.05; letter-spacing: 0; }
+			p { color: var(--muted); line-height: 1.7; }
+			.grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; max-width: 1180px; margin: 0 auto; padding: 18px 6vw 64px; }
+			.card { min-height: 360px; display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; border: 1px solid var(--line); background: #fff; color: inherit; text-decoration: none; position: relative; overflow: hidden; }
+			.card:before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(0,0,0,.48)), var(--bg); background-size: cover; background-position: center; transition: transform .28s ease; }
+			.card:hover:before { transform: scale(1.04); }
+			.card > * { position: relative; z-index: 1; color: #fff; text-shadow: 0 1px 16px rgba(0,0,0,.35); }
+			.card small { font-weight: 700; text-transform: uppercase; opacity: .86; }
+			.card h2 { margin: 10px 0 8px; font-size: 24px; letter-spacing: 0; }
+			.card p { margin: 0; color: rgba(255,255,255,.88); }
+			.note { max-width: 1180px; margin: 0 auto 46px; padding: 0 6vw; color: var(--muted); }
+			.note strong { color: var(--ink); }
+			footer { border-top: 1px solid var(--line); padding: 22px 6vw; color: var(--muted); max-width: 1180px; margin: 0 auto; }
+			@media (max-width: 1080px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+			@media (max-width: 640px) { header { padding-top: 34px; } .grid { grid-template-columns: 1fr; } .card { min-height: 280px; } }
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>HTML5 UP 个人主页样板合集</h1>
+			<p>5 个可直接展示给客户看的静态网站样板，已按不同客户类型改成中文内容。每个样板都可独立复制、换文字图片后交付，并可通过 GitHub + Cloudflare Pages 发布。</p>
+		</header>
+		<main class="grid">
+			<a class="card" href="massively/" style="--bg: url('massively/images/pic01.jpg')"><small>Massively</small><h2>摄影博客 / 图文作品集</h2><p>适合摄影师、旅行博主、文案作者。</p></a>
+			<a class="card" href="dimension/" style="--bg: url('dimension/images/bg.jpg')"><small>Dimension</small><h2>高级个人名片页</h2><p>适合自由职业者、咨询师、讲师。</p></a>
+			<a class="card" href="forty/" style="--bg: url('forty/images/pic01.jpg')"><small>Forty</small><h2>设计工作室案例墙</h2><p>适合品牌设计、摄影团队、案例展示。</p></a>
+			<a class="card" href="phantom/" style="--bg: url('phantom/images/pic03.jpg')"><small>Phantom</small><h2>多项目作品集网格</h2><p>适合 UI/UX、插画、网页设计案例。</p></a>
+			<a class="card" href="hyperspace/" style="--bg: url('hyperspace/images/pic02.jpg')"><small>Hyperspace</small><h2>服务型小型官网</h2><p>适合程序员、工作室、轻量服务介绍。</p></a>
+		</main>
+		<section class="note">
+			<p><strong>商用注意：</strong>这些样板基于 HTML5 UP 模板定制，HTML5 UP 允许个人和商业使用，但需要保留设计署名。交付客户时建议保留页面底部 Design: HTML5 UP 或在说明文件里保留来源。</p>
+		</section>
+		<footer>Design base: <a href="https://html5up.net">HTML5 UP</a>. Customized showcase samples.</footer>
+	</body>
+</html>
